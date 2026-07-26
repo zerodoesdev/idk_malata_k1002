@@ -56,3 +56,6 @@ $(call inherit-product, build/target/product/verity.mk)
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 28
 PRODUCT_TARGET_VNDK_VERSION := 28
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt8167.rc:recovery/root/init.recovery.mt8167.rc
